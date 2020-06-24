@@ -15,7 +15,7 @@ This repo is directly copied from original [clusterloader2](https://github.com/k
 * scheduler_name:  默认 default-scheduler
 * pods_per_node: 默认 20
 
-**测试结果：**在`reports`文件夹中
+**测试结果：** 在`reports`文件夹中
 
 * junit.xml：测试总结文件
 
