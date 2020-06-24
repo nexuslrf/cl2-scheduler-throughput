@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="ClusterLoaderV2" tests="1" failures="0" errors="0" time="35.445">
+      <testcase name="throughput-config-local.yaml" classname="ClusterLoaderV2" time="35.445531519"></testcase>
+  </testsuite>
