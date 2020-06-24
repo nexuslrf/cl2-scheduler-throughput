@@ -15,7 +15,7 @@ This repo is directly copied from original [clusterloader2](https://github.com/k
 * scheduler_name:  默认 default-scheduler
 * pods_per_node: 默认 20
 
-**测试结果：** 在`reports`文件夹中
+**测试结果：**在`reports`文件夹中
 
 * junit.xml：测试总结文件
 
@@ -34,8 +34,26 @@ This repo is directly copied from original [clusterloader2](https://github.com/k
 
 * cl2_logs*: cluster运行 log 文件，可以查看每秒的统计数据
 
-**测试方法：**
+  * 可通过 cl2_logs_stats.txt 刻画每秒 pending-> scheduled, scheduled -> running 的变化情况。
+
+**测试方法：** 
+
+命令行运行
 
 ```bash
 ./run.sh kubeconfig [scheduler_name] [pods_per_node]
 ```
+
+**其他：**
+
+* 说明集群规模；
+
+  * 随着集群的变化，测试deployment 的 pods 数量也会变化
+
+    #pods = #nodes x pods_per_node
+
+* 测试一次用时情况；
+
+  * 取决于测试规模。
+
+    Ref. 4 nodes 600 pods 的 deployment ≈ 4 min
