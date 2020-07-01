@@ -79,8 +79,8 @@ steps:
       templateFillMap:
         Replicas: {{$podsPerNamespace}}
         Group: saturation
-        CpuRequest: 10m
-        MemoryRequest: 10M
+        CpuRequest: 1m
+        MemoryRequest: 20M
 
 - name: Collecting saturation pod measurements
   measurements:
