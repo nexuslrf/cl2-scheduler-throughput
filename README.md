@@ -81,5 +81,5 @@ e.g., 测试local 4-nodes 集群下 default-scheduler在50pods/node 上的throug
   * 若要添加其他资源，需要修改`deployment.yaml`的spec
 
 * kubemark的启动：
-  * 参见[link](kubemark/KUBEMARK.md)
+  * 参见[link](kubemark/README.md)
 
